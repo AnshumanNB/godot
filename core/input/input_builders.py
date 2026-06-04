@@ -24,7 +24,7 @@ def make_default_controller_mappings(target, source, env):
         }
 
         # ensure mappings have a consistent order
-        platform_mappings = OrderedDict()
+        platform_mappings = {}
         for src_path in map(str, source):
             with open(src_path, "r", encoding="utf-8") as f:
                 mapping_file_lines = f.readlines()
